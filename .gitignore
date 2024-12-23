@@ -1,0 +1,10 @@
+# Ignore all files
+*
+
+# But do not ignore directories, so we can whitelist specific file types
+!*/
+
+# Whitelist all *.custom.yaml files
+!*.custom.yaml
+
+!README.org

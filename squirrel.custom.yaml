@@ -1,0 +1,3 @@
+patch:
+  "style/color_scheme": "mojave_dark"
+  "app_options/org.gnu.Emacs": # 不要對 emacs 做額外控制

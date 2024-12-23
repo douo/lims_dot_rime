@@ -1,0 +1,16 @@
+patch:
+  ascii_composer/switch_key: # 參考：https://gist.github.com/lotem/2981316
+  # 必须在 default 才能生效，squirrel 无效
+    Caps_Lock: noop # 禁用該按鍵
+    Shift_L: commit_code # 切換中英文的時候直接英文上屏，對應的 `commit_text` 中文上屏
+    Shift_R: noop # 禁用，不然響應 karabiner 的 HYPER_R ，導致衝突
+    Control_L: noop
+    Control_R: noop
+
+  schema_list:
+   - schema: rime_ice               # 雾凇拼音（全拼）
+   - schema: double_pinyin_flypy    # 小鹤双拼
+
+  key_binder/bindings/+:
+    __patch:
+      - key_bindings:/emacs_editing # 恢复被雾凇禁用的 Emacs 快捷键
